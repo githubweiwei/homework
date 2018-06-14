@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/2.css"  />
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<img id="one" src="img/未标题-1.png" />
+				<input type="search" name="search" id="search" value="请搜索店铺内商品" />
+				<img id="two" src="img/未标题-5.png" /> 
+			</div>
+			<div class="middle">
+				<a href="#" style="color:red;">推荐</a>
+				<a href="#">销量</a>
+				<a href="#">新品</a>
+				<select style="border: 0;"><option>价格</option></select>
+			</div>
+			<div class="bottom">
+				<div class="pic1">
+					<div class="k1">
+					<img src="img/未标题-6.png" /> 
+					<h4>红豆HODO男士商务休闲正装  纯色短袖衬衣 职业装短袖衬衫</h4>
+					<p>¥119.00</p>
+					<span>多买优惠</span>
+					</div>
+				</div>
+				<div class="pic2">
+					<div class="k1">
+					<img src="img/未标题-7.png" /> 
+					<h4>红豆HODO男士商务休闲正装  纯色短袖衬衣 职业装短袖衬衫</h4>
+					<p>¥119.00</p>
+					<span>多买优惠</span>
+					</div>
+				</div>
+				<div class="pic3">
+					<div class="k1">
+					<img src="img/未标题-8.png" /> 
+					<h4>红豆HODO男士商务休闲正装  纯色短袖衬衣 职业装短袖衬衫</h4>
+					<p>¥119.00</p>
+					<span>多买优惠</span>
+					</div>
+				</div>
+				<div class="pic4">
+					<div class="k1">
+					<img src="img/未标题-9.png" /> 
+					<h4>红豆HODO男士商务休闲正装  纯色短袖衬衣 职业装短袖衬衫</h4>
+					<p>¥119.00</p>
+					<span>多买优惠</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript">
+			
+			$("a").onmousemove=function(e){
+				if(flag){
+					e.target.style.backgroundColor="red";
+				}else{
+					e.target.style.backgroundColor="blue";
+				}
+				flag=!flag;
+			}
+			
+			/*$("a").hover(function(){
+				$(this).css("background-color","red");
+			},function(){
+				$(this).css("background-color","b");
+			});*/
+		</script>
+		
+	</body>
+</html>

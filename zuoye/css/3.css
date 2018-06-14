@@ -1,0 +1,35 @@
+*{margin:0 auto; padding:0; font-family: "微软雅黑";}
+over{overflow: hidden; zoom:1;}
+
+.box{width:700px;}
+
+.top{border-bottom: 2px solid gray; overflow: hidden; zoom:1; margin-top:50px ;}
+.top img{float:left; padding-left:15px;}
+.top h2{text-align: center; color:gray; float:left; margin-left: 30%; font-size:30px;}
+
+.bottom{margin: 10px; color:gray; width:650px;  text-indent: 1.2em; font-size: 12px;}
+.bottom a{color: red;}
+.bottom p{display: inline-block;}
+
+.middle{width:650px;}
+.middle dl{overflow: hidden; zoom:1;}
+.middle dd{border-bottom: 1px solid gray;}
+/*.middle dd:first-child{background-image: url(../img/未标题-2.png);  background-repeat:repeat-x ;}*/
+#one{width:100px; height: 60px; float:right; margin-right:20px ; margin-top: 15px;}
+#two{width:60px; height:40px; float:right; margin-right:20px ; margin-top: 20px;}
+.middle dd input{width:400px; height: 60px; border: 0; padding:10px;}
+.middle label{font-size: 16px; margin-left:10px;}
+input[type="submit"]{width:100%; height:60px; background-color: red; color:white; font-size:20px; line-height: 40px; border: 0; margin-top:50px ;}
+
+.pic{width: 650px; overflow: hidden; zoom:1; margin-top: 30px;}
+.pic1,.pic2,.pic3{width:200px; float:left;}
+.pic2{margin-left: 25px;}
+.pic3{margin-left: 25px;}
+.pic a{text-decoration: none; line-height: 32px; color:grey;}
+.pic img{width:30px; float:left;}
+.pic span{line-height: 32px; color:grey;}
+
+.dl{width:650px; text-align: center; margin-top: 100px; overflow: hidden; zoom:1;}
+.dl img{float:left; width:270px;}
+.dl a{text-decoration: none; color:grey; float:left; width:110px; margin-top: 5px;}
+.qq{width:650px; text-align: center; margin-top: 20px;}

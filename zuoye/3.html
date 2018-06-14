@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/3.css"  />	
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<img src="img/未标题-1.png" /> 
+				<h2>京东登录</h2>				
+			</div>
+			
+			<div class="middle">
+				<form action="#" method="post">
+					<dl>
+						
+						<dd>
+							<label for="user">账号</label><input type="text" name="user" id="user" value="" placeholder="请输入账号"/>
+						</dd>
+						
+						<dd>
+							<label for="user">密码</label>
+							<input type="password" name="pwd" id="pwd" value="" placeholder="请输入密码"/>
+						<img  id="two" src="img/未标题-3.png" /> 
+						</dd>
+						
+						<dd>
+							<label for="code">验证码</label>
+							<input type="text" name="code" id="code" value="" placeholder="请输入验证码"/>
+						<img id="one" src="img/未标题-2.png" /> 
+						</dd>
+						<div id="tips"></div>
+						<input type="submit" name="submit" id="submit" value="登 录" />
+					</dl>					
+				</form>				
+			</div>
+			<div class="bottom">
+				<span>注册既视为同意</span>
+				<a href="#">《京东用户注册协议》</a>
+				<P>、</P>
+				<a href="#">《用户隐私政策》</a>
+			</div>	
+			
+			<div class="pic">
+				<div class="pic1">
+					<img src="img/未标题-18.png" /> 
+					<span>一个月内登录</span>					
+				</div>
+				<div class="pic2">
+					<img src="img/未标题-19.png" /> 
+					<a href="#">找回密码</a>				
+				</div>
+				<div class="pic3">
+					<img src="img/未标题-20.png" /> 
+				<a href="#">快速注册</a>	
+				</div>
+			</div>
+			
+			<div class="dl">
+				<img src="img/未标题-16.png" /> 
+				<a href="#">其他方式登录</a>
+				<img src="img/未标题-16.png" /> 
+			</div>
+			
+			<div class="qq">
+				<img src="img/未标题-14.png" /> 
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript">
+			$("form").submit(function(e) {
+				
+				e.preventDefault();
+				var userName = $("#user").val();
+				var pwd=$("#pwd").val();
+				var code=$("#code").val();
+				var dl=$("#submit").val();
+				var tips = document.getElementById("tips");
+				
+				if(checkPassword(pwd) ||checkUserName(userName)||checkCode(code)) {
+					alert("可以提交！");
+				} else {
+					tips.innerText = "账号或密码或验证码不正确！";
+					tips.style.color = "red";
+					/*userInput.removeAttribute("disabled");
+					pwdInput.removeAttribute("disabled");*/
+				}
+
+			});
+			
+			
+			// 用户名
+			function checkUserName(name) {
+				var reg = /^[a-zA-z]\w{5,19}$/;
+				return reg.test(name);
+			}
+			//密码
+			function checkPassword(pwd) {
+				var reg=/\d[^a-zA-Z0-9].{6,20}/;
+				
+				return reg.test(pwd);
+			}
+			
+			//验证码
+			function checkCode(code){
+				var reg=/\d[a-zA-Z0-9]{4}/;
+				return reg.test(code);
+			}
+			
+		</script>
+	</body>
+</html>
