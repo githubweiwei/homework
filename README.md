@@ -1,5 +1,7 @@
 # homework
-其他：https://githubweiwei.github.io/homework/6.15/1.html  
+其他1：https://githubweiwei.github.io/homework/zuoye/1.html
+其他2：https://githubweiwei.github.io/homework/zuoye/2.html
+其他3：https://githubweiwei.github.io/homework/zuoye/3.html
 homework
 第一次作业：
 响应式布局：https://githubweiwei.github.io/homework/6.15/1.html  
